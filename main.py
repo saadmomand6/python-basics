@@ -68,3 +68,30 @@
 # m = [100, 200 , 300]
 # k = l + m
 # print(k)
+# /////////////////// TUPLE IN PYTHON //////////////////////////
+# //// REMEMBER TUPLE CAN'T BE CHANGE AS A LIST DO//////////
+# ////////// in list we use square bracket [] and in tuple we use rounded brackets () //////////////////
+# tup = (2,8,1)
+# print(type(tup), tup)
+# agar tum tuple ko 1 value do gy tu lazmi comma( , ) add krna huga warna wo int ya string assume krlega like
+# tup = (1) # here after 1 comma is must to generate a tuple
+# print(type(tup), tup) 
+# ///////// you can add different data types item in a single tuple and list in python //////
+# tup = (2,5,9,"hi" , True)
+# print(type(tup), tup)
+# //// to print item of specific index in tuple ///////
+# tup = (2,8,1)
+# print(tup[1])
+# //////// SLICING OF TUPLE IS SAME AS IN LIST ////////
+# tup = (8,6,5,2,3,1,4)
+# tup2 = tup[2:5]
+# print(tup2)
+# //////// TO EDIT A TUPLE YOU HAVE TO CHANGE IT TO LIST FIRST AND THEN EDIT AND THEN THEN BACK TO TUPLE///////
+# names = ("mack","john", "smith", "nikloa")
+# temporaryList = list(names)
+# print(temporaryList)
+# temporaryList.append("goerge")
+# temporaryList.pop(1)
+# print(temporaryList)
+# names = tuple(temporaryList)
+# print(names)
