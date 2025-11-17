@@ -95,3 +95,31 @@
 # print(temporaryList)
 # names = tuple(temporaryList)
 # print(names)
+# /////////////////// DAY-27 KON BANEGA KAROR PATI GAME //////////////////
+# questionsList = {
+#     "What is capital of pakistan": {
+#         "options" : ["(a) karachi" ,"(b) lahore","(c) islamabad" , "(d) quetta"],
+#         "correctAnswer": "c"
+#         },
+#     "What is capital of Sindh": {
+#         "options" : ["(a) karachi" ,"(b) hyderabad","(c) sukkur" , "(d) tatta"],
+#         "correctAnswer": "a"
+#         },
+#     "What is capital of balochistan": {
+#         "options" : ["(a) lasbela" ,"(b) kalat","(c) khuzdar" , "(d) quetta"],
+#         "correctAnswer": "d"
+#         },
+# }
+# prize = 0
+# def askQuestion(gameContent):
+#     global prize
+#     print("Choose correct answer by selecting in a , b, c, d")
+#     for i in gameContent:
+#         user_aswer = input(f"{i}? \nOptions are:\n{", ".join(gameContent[i]["options"])} \nYour answer: ")
+#         if(user_aswer == gameContent[i]["correctAnswer"]):
+#             prize += 100
+#             print("correct answer")
+#         else:
+#             print("sorry wrong answer")
+#     print(f"Game over! \n You get prize of ${prize}")
+# askQuestion(questionsList)
