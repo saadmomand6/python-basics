@@ -123,3 +123,27 @@
 #             print("sorry wrong answer")
 #     print(f"Game over! \n You get prize of ${prize}")
 # askQuestion(questionsList)
+# /////////////// RECURSION IN PYTHON //////////////////
+# def factorial(n):
+#     if(n <= 1):
+#         # print(n)
+#         return 1
+#     else:
+#one way of doing this 
+        # sub = factorial(n - 1)  
+        # print(f"it comes {n} with {n * sub}")
+        # # return n * sub
+# second way of doing this
+#         return (n * factorial(n-1))
+# print(factorial(4))
+# /////////////// fibonacci IN PYTHON //////////////////
+# def fibonacci(n):
+#     if(n <= 0):
+#         return 0
+#     elif(n ==1):
+#          return 1
+#     else:
+#         return fibonacci(n-1) + fibonacci(n-2)
+# for i in range(0,8):
+#         print(f"my i is {i}")
+#         print(fibonacci(i))
