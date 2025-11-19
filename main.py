@@ -199,3 +199,53 @@
 # S1.clear() # it will CLEAR entire set
 # ///// DEL METHOD ///////
 # del S1 # it will delete entire set
+# /////////////////////// DICTIONARIES IN PYTHON //////////////////////////
+# ///// dictionaries are used to store data values in key:value pairs ///////
+# ///// dictionaries are ordered changeable and do not allow duplicates ///////
+# myDict = {
+#     "name": "john",
+#     "age": 30,
+#     "city": "new york"
+# }
+# print(myDict)
+# print(myDict["name"]) # to access specific value in dictionary by using key
+# print(myDict.get("age")) # another way to access specific value in dictionary by using key
+# print(myDict.keys()) # to get all keys of dictionary 
+# print(myDict.values()) # to get all values of dictionary
+# print(myDict.items()) # to get all key:value pairs of dictionary
+# # /// to get the key using for loop /////
+# for i in myDict.keys():
+#     print(i)
+# # /// to get the value using for loop /////
+# for i in myDict.values():
+#     print(i)
+# # OR
+# for i in myDict.keys():
+#     print(myDict[i])
+# /////////// METHODS IN DICTIONARY ///////////
+# seniorEMPLOYEES = {
+#     "ali": 72,
+#     "asad": 80,
+#     "saeed": 68,
+#     "umer": 90,
+#     "bilal": 75
+# }
+# juniorEMPLOYEES = {
+#     "hamza": 50,
+#     "hassan": 60,
+#     "ahmed": 55,
+# }
+# seniorEMPLOYEES.update(juniorEMPLOYEES) # it will add juniorEMPLOYEES dictionary to seniorEMPLOYEES dictionary
+# seniorEMPLOYEE = (...juniorEMPLOYEES)
+# print(juniorEMPLOYEES)
+# //// to add a dictionary in another dictionary /////
+# **seniorEMPLOYEES will add all key:value pairs of seniorEMPLOYEES dictionary to juniorEMPLOYEES dictionary
+# ///// to clear entire dictionary /////
+# juniorEMPLOYEES.clear()
+# ///// to remove a item in dictionary /////
+# juniorEMPLOYEES.pop("hamza") # it will remove hamza item from juniorEMPLOYEES dictionary
+# ///// to remove last item in dictionary /////
+# juniorEMPLOYEES.popitem() # it will remove last item from juniorEMPLOYEES dictionary
+# ///// to delete item in dictionary /////
+# del juniorEMPLOYEES["hamza"] # it will delete hamza item from juniorEMPLOYEES dictionary 
+# print(juniorEMPLOYEES)
