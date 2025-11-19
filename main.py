@@ -263,3 +263,20 @@
 #         break
 # else:
 #     print("loop is ended")
+# /////////////////////////////TRY EXCEPT FINALLY CLAUSE IN PYTHON ///////////////////
+# try:
+#     num = int(input("enter a number:  "))
+#     a= [1,6]
+#     print(a[num])
+# except ValueError:
+#     print("not an integer provided")
+# except IndexError:
+#     print("not in range")
+# finally:
+#     print("i am always executed")
+# ///////////////////////////// RAISING CUSTOM ERRORS IN PYTHON ///////////////////
+# in pythoin we can raise a custome error by using a "raize" keyword, this custom raise error will not allow 
+# to furthur execute your program if something is went wroung or unexpected
+# num = int(input("enter a value between 5 and 10: "))
+# if(num <5 or num >10):
+#     raise ValueError("Value should be between 5 and 10")
