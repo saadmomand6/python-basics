@@ -147,3 +147,55 @@
 # for i in range(0,8):
 #         print(f"my i is {i}")
 #         print(fibonacci(i))
+# ///////////////// SETS IN PYTHON //////////////////
+# /// sets are unorderd collection of items and it can't have duplicate values ////
+# //////// sets are unchangeable, sets uses curly bracket, set does not contain duplicate items ///////
+# ///// set me order kabhi bi maintain ni hoga /////
+# mySet =  {10, 3, 21, 7, 2}
+# print(mySet)
+# info = {"name", 20,False, 5.6, "ssssss " , 55}
+# print(info)
+# emptySet =  {} # this will create a dictionary not a set
+# print(type(emptySet))
+# to create an empty set you have to use set() function
+# emptySet = set()
+# print(type(emptySet))
+# ///////// for loop in set //////
+# mySet =  {10, 3, 21, 7, 2}
+# for i in mySet:
+#     print(i)
+# /////// METHODS IN SET //////
+# ////// to add 2 SETS ///////
+# S1 = {2,4,1,6,3,8,9}
+# S2 = {3,5,4,7,1,8,6}
+# S3 = set()
+# S3 = S1.union(S2) # it will merge both sets and remove duplicate values
+# print(S3)
+# S3 = S1.intersection(S2) # it will give only common values in both sets
+# print(S3)
+# S1.update(S2) # it will add S2 values to S1 and remove duplicate values
+# print(S1)
+# S1.intersection_update(S2) # it will keep only common values in S1 and remove other values
+# print(S1)
+# ////// SYEMMETRIC DIFFERENCE ///////
+# S3 = S1.symmetric_difference(S2) # it will give values which are not common in both sets
+# print(S3)
+# S3 = S1.difference(S2) # it will give values which are in S1 but not in S2
+# print(S3)
+# ////// dISJOINT METHOD ///////
+# isdisjoint() — checks if NO common element exists between two sets
+# isDisjoint = S1.isdisjoint(S2) # it will return false if both sets have common values otherwise true
+# print(isDisjoint)
+# ////// ISSUPERSET METHOD ///////
+# issuperset() — checks if S1 contains ALL values of S2
+# issuperset = S1.issuperset(S2) # it will return true if S1 has all values of S2 otherwise false
+# print(issuperset)
+# REMOVE/ADD/UPDATE ARE COMMON METHODS IN SET LIKE LIST//////////////// 
+# DISCARD OR REMOVE METHOD ITEM KO SET SE HATA DETA HAI FARQ BUS ITNA HAI K DISCARD
+# METHOD AGAR ITEM NA HO TU BHI ERROR NI DEGA MAGAR REMOVE METHOD ERROR DEGA
+# ///// POP METHOD ///////
+# poppedItem = S1.pop() # it will remove random item from set because set is unorderd
+# ///// CLEAR METHOD ///////
+# S1.clear() # it will CLEAR entire set
+# ///// DEL METHOD ///////
+# del S1 # it will delete entire set
