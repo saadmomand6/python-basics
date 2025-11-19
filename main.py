@@ -249,3 +249,17 @@
 # ///// to delete item in dictionary /////
 # del juniorEMPLOYEES["hamza"] # it will delete hamza item from juniorEMPLOYEES dictionary 
 # print(juniorEMPLOYEES)
+# /////////////////////// for loop with else in python //////////////////////////
+# main point is agar for loop me controller nhi jaa paya tu else me jaay ga
+# or agar for loop me controller jaa paya tu end me else chalega
+# for i in range(5):
+#     print(i)
+# else:
+#     print("loop is ended")
+# /// break k through else ko ruk sakty hha//////////
+# for i in range(5):
+#     print(i)
+#     if(i == 3):
+#         break
+# else:
+#     print("loop is ended")
