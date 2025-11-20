@@ -285,36 +285,36 @@
 # if word contains more then 3 characters , remove the first one and append it to last and then add 3 random character at begining
 # and at ending. if word contains less or equal to 3 then simply reverse it
 # AND VISE VERSA FOR DECREPTION
-import random
-import string
-all_alphabets = string.ascii_letters
-def wordIncript():
-    word = input("enter your meesage to incripte: ")
-    if(len(word) <= 3 ):
-        print(word[::-1])
-    else:
-        first_char = word[0]
-        remaining_string = word[1:]
-        new_string = remaining_string + first_char
-        beg_random_charachters = "".join(random.choices(all_alphabets, k=3)).lower()
-        end_random_charachters = "".join(random.choices(all_alphabets, k=3)).lower()
-        incriptedMessage = beg_random_charachters+ "" +new_string + "" + end_random_charachters
-        print(f"your incriptedMessage {incriptedMessage}")
-def wordDecript():
-    word = input("enter your meesage to decripte: ")
-    if(len(word) <= 3 ):
-        print(word[::-1])
-    else:
-        remove_beg = word[3:]
-        remove_end = remove_beg[:-3]
-        last_char = remove_end[len(remove_end) -1]
-        remove_end = remove_end[:-1]
-        decriptedMessage = last_char + remove_end
-        print(f"your decriptedMessage {decriptedMessage}")
-choice = input("Want to incripte or Decripte a message, type i for incripte and d for decripte: ").lower()
-if(choice == "i"):
-    wordIncript()
-elif(choice == "d"):
-    wordDecript()
-else:
-    print("invalid option selected")
+# import random
+# import string
+# all_alphabets = string.ascii_letters
+# def wordIncript():
+#     word = input("enter your meesage to incripte: ")
+#     if(len(word) <= 3 ):
+#         print(word[::-1])
+#     else:
+#         first_char = word[0]
+#         remaining_string = word[1:]
+#         new_string = remaining_string + first_char
+#         beg_random_charachters = "".join(random.choices(all_alphabets, k=3)).lower()
+#         end_random_charachters = "".join(random.choices(all_alphabets, k=3)).lower()
+#         incriptedMessage = beg_random_charachters+ "" +new_string + "" + end_random_charachters
+#         print(f"your incriptedMessage {incriptedMessage}")
+# def wordDecript():
+#     word = input("enter your meesage to decripte: ")
+#     if(len(word) <= 3 ):
+#         print(word[::-1])
+#     else:
+#         remove_beg = word[3:]
+#         remove_end = remove_beg[:-3]
+#         last_char = remove_end[len(remove_end) -1]
+#         remove_end = remove_end[:-1]
+#         decriptedMessage = last_char + remove_end
+#         print(f"your decriptedMessage {decriptedMessage}")
+# choice = input("Want to incripte or Decripte a message, type i for incripte and d for decripte: ").lower()
+# if(choice == "i"):
+#     wordIncript()
+# elif(choice == "d"):
+#     wordDecript()
+# else:
+#     print("invalid option selected")
