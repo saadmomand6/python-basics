@@ -263,3 +263,16 @@
 #         break
 # else:
 #     print("loop is ended")
+# ////////////// ENUMERATE FUNCTION IN PYTHON //////////////////
+# /// it will give index along with value in for loop ///
+# name = "harry"
+# for index, value in enumerate(name):
+#     print(f"at index {index} the value is {value}")
+# //////////////////////////////////////////////////////
+marks = [78, 85, 62, 90, 55]
+for index, value in enumerate(marks):
+    if(index == 2):
+        print("you have to work hard")
+    else:
+        print(f"at index {index} the mark is {value}")
+    
